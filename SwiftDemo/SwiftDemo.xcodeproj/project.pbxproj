@@ -16,6 +16,7 @@
 		63C4003A276B395A009C680B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63C40038276B395A009C680B /* Main.storyboard */; };
 		63C4003C276B395B009C680B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63C4003B276B395B009C680B /* Assets.xcassets */; };
 		63C4003F276B395B009C680B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63C4003D276B395B009C680B /* LaunchScreen.storyboard */; };
+		70D4F9342774C440002ACB01 /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 70D4F9332774C440002ACB01 /* Property List.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		63C4003B276B395B009C680B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63C4003E276B395B009C680B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63C40040276B395B009C680B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70D4F9332774C440002ACB01 /* Property List.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
 		8AB7C5B16F69B97F4EDBAE4F /* Pods_SwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C7F7D2D3017625B3435EEED /* Pods-SwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemo.debug.xcconfig"; path = "Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,6 +74,7 @@
 				63C40036276B395A009C680B /* ViewController.swift */,
 				63396327276F2636006106B2 /* TestViewControllerA.swift */,
 				63396329276F268F006106B2 /* TestViewControllerB.swift */,
+				70D4F9332774C440002ACB01 /* Property List.plist */,
 				63C40038276B395A009C680B /* Main.storyboard */,
 				63C4003B276B395B009C680B /* Assets.xcassets */,
 				63C4003D276B395B009C680B /* LaunchScreen.storyboard */,
@@ -86,7 +89,6 @@
 				8C7F7D2D3017625B3435EEED /* Pods-SwiftDemo.debug.xcconfig */,
 				00765901070F5664066E97E6 /* Pods-SwiftDemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -160,6 +162,7 @@
 			files = (
 				63C4003F276B395B009C680B /* LaunchScreen.storyboard in Resources */,
 				63C4003C276B395B009C680B /* Assets.xcassets in Resources */,
+				70D4F9342774C440002ACB01 /* Property List.plist in Resources */,
 				63C4003A276B395A009C680B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

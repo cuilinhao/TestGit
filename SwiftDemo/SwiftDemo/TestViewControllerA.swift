@@ -66,6 +66,11 @@ class TestViewControllerA: UIViewController {
 		tableView.backgroundColor = .systemPurple
 		
 		testURLCompones1()
+		
+		let listData = Bundle.main.url(forResource: "Property List", withExtension: nil)
+		
+		print("__>>>__\(listData)_")
+		
     }
 }
 
