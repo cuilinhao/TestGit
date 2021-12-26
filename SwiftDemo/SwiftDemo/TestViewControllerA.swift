@@ -44,8 +44,8 @@ class TestViewControllerA: UIViewController {
 		let tableView = UITableView()
 		
 		tableView.dataSource = self
+		tableView.delegate = self
 		tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-		 
 		tableView.translatesAutoresizingMaskIntoConstraints = false
 		
 		return tableView
@@ -56,7 +56,8 @@ class TestViewControllerA: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = .systemPurple
+		self.title = "SwiftHelp"
+        view.backgroundColor = .systemYellow
         let ss = SomeClass()
         ss.test()
 		view.addSubview(tableView)
@@ -68,13 +69,8 @@ class TestViewControllerA: UIViewController {
 			tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
 			tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
 		])
-		
-		tableView.backgroundColor = .systemPurple
-		
 		testURLCompones1()
-		
 		loadData()
-		
     }
 }
 
@@ -116,6 +112,13 @@ extension TestViewControllerA: UITableViewDataSource, UITableViewDelegate {
 		
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		
+		switch indexPath.row {
+		case 0:
+			let vc = TestMPTextViewViewController()
+			self.navigationController?.pushViewController(vc, animated: true)
+		default:
+			debugPrint(">>>nothing <<<")
+		}
 	}
 }
 
@@ -135,10 +138,8 @@ extension TestViewControllerA {
 		   URLQueryItem(name: "format", value: format)
 		   ]
 		
-		
 		print(urlComponents.url?.absoluteString)
 
-		
 	}
 
 }
@@ -174,9 +175,6 @@ extension TestViewControllerA {
 		print(amountStr1)
 		let amountStr2 = numberFormatter.string(from: num2) ?? "--"
 		print(amountStr2)
-		
-		// fontName:"Avenir-Black" size:18
-		
 	}
 	
 	override func viewWillDisappear(_ animated: Bool) {
@@ -191,7 +189,6 @@ extension TestViewControllerA {
 extension TestViewControllerA {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
         
         let ff =  try! JSONDecoder().decode(Double.self, from: "123.456".data(using: .utf8)!)
         

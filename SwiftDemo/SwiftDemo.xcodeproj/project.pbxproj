@@ -22,6 +22,14 @@
 		704D54982778133800D645AA /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704D54922778133800D645AA /* UIColor-Extension.swift */; };
 		704D54992778133800D645AA /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704D54932778133800D645AA /* Common.swift */; };
 		704D54A02778139B00D645AA /* TestA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704D549F2778139B00D645AA /* TestA.swift */; };
+		704D54A227781B6D00D645AA /* TestMPTextViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704D54A127781B6D00D645AA /* TestMPTextViewViewController.swift */; };
+		704D54A427781C5D00D645AA /* MPTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704D54A327781C5D00D645AA /* MPTextView.swift */; };
+		704D54AB27781C6F00D645AA /* AutoLayoutResizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704D54A627781C6F00D645AA /* AutoLayoutResizable.swift */; };
+		704D54AC27781C6F00D645AA /* AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704D54A727781C6F00D645AA /* AutoLayout.swift */; };
+		704D54AD27781C6F00D645AA /* AutoLayoutElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704D54A827781C6F00D645AA /* AutoLayoutElement.swift */; };
+		704D54AE27781C6F00D645AA /* NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704D54A927781C6F00D645AA /* NSLayoutConstraint.swift */; };
+		704D54AF27781C6F00D645AA /* AutoLayoutCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704D54AA27781C6F00D645AA /* AutoLayoutCompatible.swift */; };
+		704D54B12778278B00D645AA /* TestTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704D54B02778278B00D645AA /* TestTextView.swift */; };
 		70D4F9342774C440002ACB01 /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 70D4F9332774C440002ACB01 /* Property List.plist */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +51,14 @@
 		704D54922778133800D645AA /* UIColor-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 		704D54932778133800D645AA /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		704D549F2778139B00D645AA /* TestA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestA.swift; sourceTree = "<group>"; };
+		704D54A127781B6D00D645AA /* TestMPTextViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMPTextViewViewController.swift; sourceTree = "<group>"; };
+		704D54A327781C5D00D645AA /* MPTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MPTextView.swift; sourceTree = "<group>"; };
+		704D54A627781C6F00D645AA /* AutoLayoutResizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoLayoutResizable.swift; sourceTree = "<group>"; };
+		704D54A727781C6F00D645AA /* AutoLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoLayout.swift; sourceTree = "<group>"; };
+		704D54A827781C6F00D645AA /* AutoLayoutElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoLayoutElement.swift; sourceTree = "<group>"; };
+		704D54A927781C6F00D645AA /* NSLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSLayoutConstraint.swift; sourceTree = "<group>"; };
+		704D54AA27781C6F00D645AA /* AutoLayoutCompatible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoLayoutCompatible.swift; sourceTree = "<group>"; };
+		704D54B02778278B00D645AA /* TestTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTextView.swift; sourceTree = "<group>"; };
 		70D4F9332774C440002ACB01 /* Property List.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
 		8AB7C5B16F69B97F4EDBAE4F /* Pods_SwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C7F7D2D3017625B3435EEED /* Pods-SwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemo.debug.xcconfig"; path = "Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -84,6 +100,7 @@
 				63C40032276B395A009C680B /* AppDelegate.swift */,
 				63C40034276B395A009C680B /* SceneDelegate.swift */,
 				63396327276F2636006106B2 /* TestViewControllerA.swift */,
+				704D54A527781C6F00D645AA /* AutoLayout */,
 				704D548D2778133800D645AA /* Tools */,
 				704D549B2778136800D645AA /* Class */,
 				704D549A2778136800D645AA /* Other */,
@@ -121,11 +138,26 @@
 		704D549B2778136800D645AA /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				704D54A327781C5D00D645AA /* MPTextView.swift */,
 				704D549F2778139B00D645AA /* TestA.swift */,
+				704D54A127781B6D00D645AA /* TestMPTextViewViewController.swift */,
+				704D54B02778278B00D645AA /* TestTextView.swift */,
 			);
 			name = Class;
 			path = SwiftDemo/Class;
 			sourceTree = SOURCE_ROOT;
+		};
+		704D54A527781C6F00D645AA /* AutoLayout */ = {
+			isa = PBXGroup;
+			children = (
+				704D54A627781C6F00D645AA /* AutoLayoutResizable.swift */,
+				704D54A727781C6F00D645AA /* AutoLayout.swift */,
+				704D54A827781C6F00D645AA /* AutoLayoutElement.swift */,
+				704D54A927781C6F00D645AA /* NSLayoutConstraint.swift */,
+				704D54AA27781C6F00D645AA /* AutoLayoutCompatible.swift */,
+			);
+			path = AutoLayout;
+			sourceTree = "<group>";
 		};
 		E356B782AB537EFCA6C1FF79 /* Pods */ = {
 			isa = PBXGroup;
@@ -262,15 +294,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				704D54962778133800D645AA /* NetworkTools.swift in Sources */,
+				704D54A427781C5D00D645AA /* MPTextView.swift in Sources */,
+				704D54A227781B6D00D645AA /* TestMPTextViewViewController.swift in Sources */,
+				704D54AD27781C6F00D645AA /* AutoLayoutElement.swift in Sources */,
+				704D54AC27781C6F00D645AA /* AutoLayout.swift in Sources */,
 				63396328276F2636006106B2 /* TestViewControllerA.swift in Sources */,
 				704D54942778133800D645AA /* Date.swift in Sources */,
 				704D54972778133800D645AA /* UIColorExtension.swift in Sources */,
 				704D54982778133800D645AA /* UIColor-Extension.swift in Sources */,
+				704D54AE27781C6F00D645AA /* NSLayoutConstraint.swift in Sources */,
 				704D54952778133800D645AA /* UIBarButtonItem_Extension.swift in Sources */,
 				6339632A276F268F006106B2 /* TestViewControllerB.swift in Sources */,
 				63C40033276B395A009C680B /* AppDelegate.swift in Sources */,
+				704D54AB27781C6F00D645AA /* AutoLayoutResizable.swift in Sources */,
 				704D54A02778139B00D645AA /* TestA.swift in Sources */,
 				704D54992778133800D645AA /* Common.swift in Sources */,
+				704D54AF27781C6F00D645AA /* AutoLayoutCompatible.swift in Sources */,
+				704D54B12778278B00D645AA /* TestTextView.swift in Sources */,
 				63C40035276B395A009C680B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
