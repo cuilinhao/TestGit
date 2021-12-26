@@ -26,6 +26,14 @@ open class MPTextView: UITextView {
 
 	private let lineView = UIView()
 
+	//TODO: codeTest
+	
+	func test() {
+		
+		//self.layer.addSublayer(<#T##layer: CALayer##CALayer#>)
+		let layer = CALayer()
+	}
+	
 	override public var font: UIFont? {
 		didSet {
 			self.placeholderAttributes[.font] = self.font
@@ -40,13 +48,8 @@ open class MPTextView: UITextView {
 		}
 	}
 
-	//let placeholderView = UILabel()
+	let placeholderView = UILabel()
 	
-	lazy var placeholderView: UILabel = {
-		let lab = UILabel()
-		return lab
-	}()
-
 	private var placeholderAttributes: [NSAttributedString.Key: Any] = [
 		.foregroundColor: UIColor.systemPurple,
 		.font: UIFont.systemFont(ofSize: 24)
