@@ -9,4 +9,16 @@ target 'SwiftDemo' do
   pod 'RxCocoa', '5.1.1', :source => 'https://cdn.cocoapods.org/'
   pod 'RxSwift', '5.1.1', :source => 'https://cdn.cocoapods.org/'
 
+	
+	# Pods for DouYu_Project
+
+ pod "Kingfisher"
+ pod "SnapKit"
+ pod "R.swift"
+#pod 'Alamofire'
+#pod 'Alamofire', '~> 5.0'
+
+pod 'HandyJSON'
+pod 'SwiftyJSON'
+
 end

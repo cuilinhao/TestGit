@@ -32,6 +32,12 @@ class SomeClass: SomeSuperclass{
 
 class TestViewControllerA: UIViewController {
 
+	var dataArray = [String]() {
+		
+		didSet {
+			self.tableView.reloadData()
+		}
+	}
 	
 	lazy var tableView: UITableView = {
 		
@@ -46,7 +52,7 @@ class TestViewControllerA: UIViewController {
 		
 	}()
 	
-	//MARK:- Life Cycle
+	//MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -67,25 +73,37 @@ class TestViewControllerA: UIViewController {
 		
 		testURLCompones1()
 		
-		let listData = Bundle.main.url(forResource: "Property List", withExtension: nil)
-		
-		print("__>>>__\(listData)_")
+		loadData()
 		
     }
+}
+
+extension TestViewControllerA {
+	
+	func loadData() {
+			
+		let listData =  Bundle.main.path(forResource: "Property List", ofType: "plist")
+		let dic = NSDictionary(contentsOfFile: listData ?? "")
+		if let dataDic = dic {
+			self.dataArray = dataDic.value(forKey: "Function") as! [String]
+		}
+		
+	}
 }
 
 extension TestViewControllerA: UITableViewDataSource, UITableViewDelegate {
 	
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return 20 + 20
+		return self.dataArray.count
 	}
 	
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		
 		let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
 		
-		cell.textLabel?.text = indexPath.row.description
-		
+		//cell.textLabel?.text = indexPath.row.description
+		cell.textLabel?.text = self.dataArray[indexPath.row]
+		cell.contentView.backgroundColor = UIColor.randomColor()
 		return cell
 	}
 	
