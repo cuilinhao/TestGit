@@ -7,12 +7,14 @@
 
 import UIKit
 
+
+
 class TestURLComponentViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = .white
+        view.backgroundColor = .lightGray
         
         test0()
         

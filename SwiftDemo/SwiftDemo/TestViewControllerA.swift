@@ -117,6 +117,9 @@ extension TestViewControllerA: UITableViewDataSource, UITableViewDelegate {
             case 1:
             let vc = TestURLComponentViewController()
             self.navigationController?.pushViewController(vc, animated: true)
+		case 2:
+			let vc = TestCoadbleViewController()
+			self.navigationController?.pushViewController(vc, animated: true)
         default:
             debugPrint(">>>nothing <<<")
         }

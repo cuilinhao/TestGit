@@ -31,6 +31,7 @@
 		704D54AE27781C6F00D645AA /* NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704D54A927781C6F00D645AA /* NSLayoutConstraint.swift */; };
 		704D54AF27781C6F00D645AA /* AutoLayoutCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704D54AA27781C6F00D645AA /* AutoLayoutCompatible.swift */; };
 		704D54B12778278B00D645AA /* TestTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704D54B02778278B00D645AA /* TestTextView.swift */; };
+		704D54B3277A01A700D645AA /* TestCoadbleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704D54B2277A01A700D645AA /* TestCoadbleViewController.swift */; };
 		70D4F9342774C440002ACB01 /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 70D4F9332774C440002ACB01 /* Property List.plist */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,7 @@
 		704D54A927781C6F00D645AA /* NSLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSLayoutConstraint.swift; sourceTree = "<group>"; };
 		704D54AA27781C6F00D645AA /* AutoLayoutCompatible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoLayoutCompatible.swift; sourceTree = "<group>"; };
 		704D54B02778278B00D645AA /* TestTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTextView.swift; sourceTree = "<group>"; };
+		704D54B2277A01A700D645AA /* TestCoadbleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCoadbleViewController.swift; sourceTree = "<group>"; };
 		70D4F9332774C440002ACB01 /* Property List.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
 		8AB7C5B16F69B97F4EDBAE4F /* Pods_SwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C7F7D2D3017625B3435EEED /* Pods-SwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemo.debug.xcconfig"; path = "Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				631902932779CC43009017D6 /* TestURLComponentViewController.swift */,
+				704D54B2277A01A700D645AA /* TestCoadbleViewController.swift */,
 			);
 			path = URLComponents;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 				63C40033276B395A009C680B /* AppDelegate.swift in Sources */,
 				704D54AB27781C6F00D645AA /* AutoLayoutResizable.swift in Sources */,
 				704D54A02778139B00D645AA /* TestA.swift in Sources */,
+				704D54B3277A01A700D645AA /* TestCoadbleViewController.swift in Sources */,
 				704D54992778133800D645AA /* Common.swift in Sources */,
 				704D54AF27781C6F00D645AA /* AutoLayoutCompatible.swift in Sources */,
 				704D54B12778278B00D645AA /* TestTextView.swift in Sources */,
