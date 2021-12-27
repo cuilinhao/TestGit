@@ -16,7 +16,7 @@ target 'SwiftDemo' do
  pod "SnapKit"
  pod "R.swift"
 #pod 'Alamofire'
-#pod 'Alamofire', '~> 5.0'
+pod 'Alamofire', '~> 5.0'
 
 pod 'HandyJSON'
 pod 'SwiftyJSON'
