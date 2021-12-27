@@ -57,44 +57,36 @@ extension TestTextView {
 		])
 		
 		img.image = self.getDrawImg()
-		
-		
-		
-		
-		
-		
 	}
 	
 	
 	func getDrawImg() -> UIImage {
+		
+		
+		let width: CGFloat = 150-50
+		let height: CGFloat = 72
+		
 		let text: NSString = "开启"
 		let font: CGFloat = 24
+		let textSize = text.size(withAttributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 20), NSAttributedString.Key.foregroundColor: UIColor.white])
 		
-		// let descAttr = NSMutableAttributedString(string: descStr, attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 10), NSAttributedString.Key.foregroundColor: UIColor(red: 0.02, green: 0.04, blue: 0.16, alpha: 1)])
-		//车主价格
-
-		
-		let textSize = text.size(withAttributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 10), NSAttributedString.Key.foregroundColor: UIColor.systemPurple])
-		
-		let contentSize = CGSize(width: 150-50-30, height: 72)
+		let contentSize = CGSize(width: width, height: height)
 		
 		UIGraphicsBeginImageContextWithOptions(contentSize, false, UIScreen.main.scale)
 		
 		let  content =  UIGraphicsGetCurrentContext()
 		
-		content?.setFillColor(UIColor.purple.cgColor)
+		content?.setFillColor(UIColor.systemBlue.cgColor)
 		
 		let path = CGMutablePath()
-		path.__addRoundedRect(transform: nil, rect: CGRect(x: 0, y: 0, width: 150-50-30, height: 72), cornerWidth: font, cornerHeight: font)
+		path.__addRoundedRect(transform: nil, rect: CGRect(x: 0, y: 0, width: width, height: height), cornerWidth: font, cornerHeight: font)
 		content?.addPath(path)
 		content?.fillPath()
 		
-		text.draw(in: CGRect(x: (contentSize.width - textSize.width) / 2, y: (contentSize.height - textSize.height)/2, width: textSize.width, height: textSize.height), withAttributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 10), NSAttributedString.Key.foregroundColor: UIColor(red: 0.02, green: 0.04, blue: 0.16, alpha: 1)])
+		text.draw(in: CGRect(x: (contentSize.width - textSize.width) / 2, y: (contentSize.height - textSize.height)/2, width: textSize.width, height: textSize.height), withAttributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 20), NSAttributedString.Key.foregroundColor: UIColor(red: 0.02, green: 0.04, blue: 0.16, alpha: 1)])
 		
 		guard let img = UIGraphicsGetImageFromCurrentImageContext() else { return UIImage()}
 		UIGraphicsEndImageContext()
-		//CFRelease(path)
-
 		return img
 	}
 	
