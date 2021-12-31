@@ -9,7 +9,12 @@ import UIKit
 
 class TestViewControllerA: UIViewController {
     // 数据源data
-    var dataSorceArray = [Any]()
+    var dataSorceArray = [Any]() {
+        
+        didSet {
+            self.tableView.reloadData()
+        }
+    }
 
     var dataArray = [String]() {
         didSet {
@@ -30,9 +35,8 @@ class TestViewControllerA: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        title = "SwiftHelp"
+        title = "SwiftDemo"
         view.backgroundColor = .systemYellow
-
         view.addSubview(tableView)
 
         NSLayoutConstraint.activate([
@@ -42,9 +46,12 @@ class TestViewControllerA: UIViewController {
             tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
         ])
         loadData()
+        handleData()
+        
     }
 }
 
+//MARK: - LoadData
 extension TestViewControllerA {
     func loadData() {
         let listData = Bundle.main.path(forResource: "Property List", ofType: "plist")
@@ -55,17 +62,35 @@ extension TestViewControllerA {
     }
 }
 
+
+extension TestViewControllerA {
+
+    func handleData() {
+        for (i, _) in self.dataArray.enumerated() {
+            if i <= 10 {
+                self.dataSorceArray.append(self.dataArray[i])
+            }
+        }
+    }
+    
+    func handleDataSource() -> [Any] {
+        return [Any]()
+    }
+ 
+}
+
+//MARK: - DataSource
 extension TestViewControllerA: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dataArray.count
+        return dataSorceArray.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
 
         // cell.textLabel?.text = indexPath.row.description
-        cell.textLabel?.text = dataArray[indexPath.row]
-        cell.contentView.backgroundColor = UIColor.randomColor()
+        cell.textLabel?.text = dataSorceArray[indexPath.row] as? String
+        cell.contentView.backgroundColor = UIColor.white
         return cell
     }
 
@@ -86,6 +111,20 @@ extension TestViewControllerA: UITableViewDataSource, UITableViewDelegate {
         case 2:
             let vc = TestCoadbleViewController()
             navigationController?.pushViewController(vc, animated: true)
+            
+            //协议
+        case 3:
+            let vc = TestProtocolViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+            // Combine
+        case 4:
+            let vc = TestCombineViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+            //数组
+        case 5:
+            let vc = TestArrayViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+            
         default:
             debugPrint(">>>nothing <<<")
         }
