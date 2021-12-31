@@ -74,6 +74,9 @@ extension TestViewControllerA {
     }
     
     func handleDataSource() -> [Any] {
+        self.dataArray.forEach { item in
+            debugPrint(item)
+        }
         return [Any]()
     }
  
@@ -118,7 +121,7 @@ extension TestViewControllerA: UITableViewDataSource, UITableViewDelegate {
             self.navigationController?.pushViewController(vc, animated: true)
             // Combine
         case 4:
-            let vc = TestCombineViewController()
+            let vc = TestCombine()
             self.navigationController?.pushViewController(vc, animated: true)
             //数组
         case 5:

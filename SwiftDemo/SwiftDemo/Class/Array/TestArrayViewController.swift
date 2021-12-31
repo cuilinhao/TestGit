@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 class TestArrayViewController: UIViewController {
 
@@ -19,6 +20,7 @@ class TestArrayViewController: UIViewController {
         
         method2()
         method3()
+        testForEach()
     }
 
 }
@@ -64,4 +66,16 @@ extension TestArrayViewController {
         }
     }
     
+}
+
+extension TestArrayViewController {
+    
+    func testForEach() {
+        
+        let numbers = ["one", "two", "three"]
+        
+        numbers.forEach { word in
+            print("____\(word)")
+        }
+    }
 }
