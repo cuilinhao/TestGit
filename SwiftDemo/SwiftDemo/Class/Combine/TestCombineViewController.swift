@@ -13,9 +13,7 @@ import Combine
  Combine是一种响应式编程范式, 采用声明试的Swift APi
  你写代码不同于以往命名式的描述如何处理数据.而是要描述好数据会经过那些逻辑运算处理,
  这样代码更好维护,可以有效的减少嵌套闭包以及分散的回调
-
  */
-
 
 class TestCombineViewController: UIViewController {
     
@@ -63,7 +61,12 @@ extension TestCombineViewController {
     //简单举个发布数据和类属性绑定的例子：
 
     //subject 广播
-    //
+    
+	/*
+	 sink 拿到值自己处理
+	 assign 直接赋值
+	 */
+	
 
 }
 
@@ -171,10 +174,7 @@ class BClass {
         let _ = pE.map { String($0) }
         //[[],[],] -> [[],[],[]]
 
-        /*
-         sink 拿到值自己处理
-         assign 直接赋值
-         */
+        
     }
 }
 

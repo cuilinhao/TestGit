@@ -21,6 +21,8 @@
 		63C4003A276B395A009C680B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63C40038276B395A009C680B /* Main.storyboard */; };
 		63C4003C276B395B009C680B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63C4003B276B395B009C680B /* Assets.xcassets */; };
 		63C4003F276B395B009C680B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63C4003D276B395B009C680B /* LaunchScreen.storyboard */; };
+		70319638278332B6002D43D2 /* CombineSearchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70319637278332B6002D43D2 /* CombineSearchAPI.swift */; };
+		7031963A278332C3002D43D2 /* CombineAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70319639278332C3002D43D2 /* CombineAPI.swift */; };
 		704D54942778133800D645AA /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704D548E2778133800D645AA /* Date.swift */; };
 		704D54952778133800D645AA /* UIBarButtonItem_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704D548F2778133800D645AA /* UIBarButtonItem_Extension.swift */; };
 		704D54962778133800D645AA /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704D54902778133800D645AA /* NetworkTools.swift */; };
@@ -57,6 +59,8 @@
 		63C4003B276B395B009C680B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63C4003E276B395B009C680B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63C40040276B395B009C680B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70319637278332B6002D43D2 /* CombineSearchAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineSearchAPI.swift; sourceTree = "<group>"; };
+		70319639278332C3002D43D2 /* CombineAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineAPI.swift; sourceTree = "<group>"; };
 		704D548E2778133800D645AA /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		704D548F2778133800D645AA /* UIBarButtonItem_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBarButtonItem_Extension.swift; sourceTree = "<group>"; };
 		704D54902778133800D645AA /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
@@ -121,6 +125,7 @@
 		6371592B277ED64C00CB297B /* Combine */ = {
 			isa = PBXGroup;
 			children = (
+				70319636278332A0002D43D2 /* CombineRequest */,
 				6371592C277ED65B00CB297B /* TestCombineViewController.swift */,
 				63715933277F09A100CB297B /* TestCombine.swift */,
 				63715935277F167200CB297B /* TestcombileLab.swift */,
@@ -171,6 +176,15 @@
 				63C40040276B395B009C680B /* Info.plist */,
 			);
 			path = SwiftDemo;
+			sourceTree = "<group>";
+		};
+		70319636278332A0002D43D2 /* CombineRequest */ = {
+			isa = PBXGroup;
+			children = (
+				70319637278332B6002D43D2 /* CombineSearchAPI.swift */,
+				70319639278332C3002D43D2 /* CombineAPI.swift */,
+			);
+			path = CombineRequest;
 			sourceTree = "<group>";
 		};
 		704D548D2778133800D645AA /* Tools */ = {
@@ -359,6 +373,7 @@
 				704D54A227781B6D00D645AA /* TestMPTextViewViewController.swift in Sources */,
 				704D54AD27781C6F00D645AA /* AutoLayoutElement.swift in Sources */,
 				704D54AC27781C6F00D645AA /* AutoLayout.swift in Sources */,
+				70319638278332B6002D43D2 /* CombineSearchAPI.swift in Sources */,
 				63396328276F2636006106B2 /* TestViewControllerA.swift in Sources */,
 				63715934277F09A100CB297B /* TestCombine.swift in Sources */,
 				63715932277EDAFE00CB297B /* TestArrayViewController.swift in Sources */,
@@ -367,6 +382,7 @@
 				704D54972778133800D645AA /* UIColorExtension.swift in Sources */,
 				704D54982778133800D645AA /* UIColor-Extension.swift in Sources */,
 				704D54AE27781C6F00D645AA /* NSLayoutConstraint.swift in Sources */,
+				7031963A278332C3002D43D2 /* CombineAPI.swift in Sources */,
 				704D54952778133800D645AA /* UIBarButtonItem_Extension.swift in Sources */,
 				6339632A276F268F006106B2 /* TestViewControllerB.swift in Sources */,
 				631902942779CC44009017D6 /* TestURLComponentViewController.swift in Sources */,
