@@ -30,9 +30,9 @@ struct githubSearchView: View {
 		NavigationView {
 			List {
 				TextField("输入: ", text: $str, onCommit: fetch)
-				ForEach(self.ss.repos) {
-					
-				}
+//				ForEach(self.ss.repos) {
+//
+//				}
 			}
 		}
 		
