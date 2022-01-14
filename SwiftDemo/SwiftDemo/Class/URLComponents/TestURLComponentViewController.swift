@@ -11,12 +11,90 @@ import UIKit
 
 class TestURLComponentViewController: UIViewController {
 
+    //可以使用
+    private(set) lazy var blur1: UIVisualEffectView = {
+        let view = UIVisualEffectView(effect: UIBlurEffect(style: .regular))
+        //view.backgroundColor = .mp(.mask)
+        view.alpha = 0.65
+        return view
+    }()
+    
+    
+    private(set) lazy var blur22: UIVisualEffectView = {
+        let view = UIVisualEffectView(effect: UIBlurEffect(style: .regular))
+        view.alpha = 0.5
+//        self.addSubview(view)
+//        view.autoLayout(in: self, top: 0, bottom: 0, leading: 0, trailing: 0)
+        let contentView = UIView()
+//        contentView.backgroundColor = .mp(.mask)
+        contentView.backgroundColor = .clear
+        contentView.alpha = 0.001
+        view.contentView.addSubview(contentView)
+        contentView.autoLayout(in: view.contentView, top: 0, bottom: 0, leading: 0, trailing: 0)
+        return view
+    }()
+    
+    
+    lazy var blur: UIView = {
+        let effect = UIBlurEffect(style: .regular)
+        let view = UIVisualEffectView(effect: effect)
+        view.backgroundColor = .lightGray
+        self.view.addSubview(view)
+        view.autoLayout(in: self.view, top: 200, bottom: nil, leading: 0, trailing: 0)
+        view.autoLayout(fixingHeight: 100, fixingWidth: nil)
+        return view.contentView
+    }()
+    
+    
+    lazy var nameLabel: UILabel = {
+        let view = UILabel()
+        view.font = .systemFont(ofSize: 19)
+        view.textColor = .white
+        view.backgroundColor = .systemRed
+        blur.addSubview(view)
+        view.autoLayout(verticallyCenteredIn: self.view, top: 10, bottom: 10, leading: nil, trailing: nil)
+        view.autoLayout(leadingAnchor: self.view.leadingAnchor, leadingMargin: 15, leadingPriority: .defaultHigh,
+                        trailingAnchor: self.view.trailingAnchor, trailingMargin: -15, trailingPriority: .defaultHigh)
+        view.setContentHuggingPriority(.defaultHigh, for: .horizontal)
+        view.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
+        return view
+    }()
+    
+    //MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = .lightGray
+        self.view.backgroundColor = .white
         
         test0()
+        let lab = UILabel()
+        lab.backgroundColor = .lightGray
+        
+        lab.text = "hahhaa"
+        lab.textColor = .white
+        lab.font = .systemFont(ofSize: 20)
+        self.view.addSubview(lab)
+        
+        lab.autoLayout(in: self.view, top: 200, bottom: nil, leading: 0, trailing: 0)
+        lab.autoLayout(fixingHeight: 100, fixingWidth: nil)
+
+        let blurEffect = UIBlurEffect.init(style: .regular)
+        let effectView = UIVisualEffectView.init(effect: blurEffect)
+
+        effectView.backgroundColor = .clear
+        effectView.alpha = 0.3
+        lab.addSubview(effectView)
+
+        effectView.autoLayout(in: lab, top: 0, bottom: 0, leading: 0, trailing: 0)
+        
+        
+//        let mask = UIView()
+//        mask.backgroundColor = .red
+//        mask.alpha = 0.2
+//        effectView.contentView.addSubview(mask)
+//        mask.autoLayout(in: effectView.contentView, top: 0, bottom: 0, leading: 0, trailing: 0)
+        
+        
         
     }
 

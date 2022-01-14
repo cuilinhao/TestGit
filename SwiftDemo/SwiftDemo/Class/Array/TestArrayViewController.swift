@@ -15,6 +15,8 @@ class TestArrayViewController: UIViewController {
 
         view.backgroundColor = .randomColor()
         
+        let vv = UITextView()
+        
        let arr = method1()
         print("__arr:\(arr)")
         
