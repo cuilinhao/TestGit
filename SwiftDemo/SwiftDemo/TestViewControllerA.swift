@@ -128,6 +128,10 @@ extension TestViewControllerA: UITableViewDataSource, UITableViewDelegate {
             let vc = TestArrayViewController()
             self.navigationController?.pushViewController(vc, animated: true)
             
+        case 6:
+            //渐变
+            let vc = GradientViewcontrollerViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
         default:
             debugPrint(">>>nothing <<<")
         }
