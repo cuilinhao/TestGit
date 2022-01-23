@@ -132,6 +132,10 @@ extension TestViewControllerA: UITableViewDataSource, UITableViewDelegate {
             //渐变
             let vc = GradientViewcontrollerViewController()
             self.navigationController?.pushViewController(vc, animated: true)
+            
+        case 7:
+            let vc = CoreTextViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
         default:
             debugPrint(">>>nothing <<<")
         }

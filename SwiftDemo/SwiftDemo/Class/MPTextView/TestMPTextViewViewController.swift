@@ -25,9 +25,8 @@ class TestMPTextViewViewController: UIViewController {
 		textView.backgroundColor = .systemPurple
 		textView.translatesAutoresizingMaskIntoConstraints = false
 		textView.font = .systemFont(ofSize: 24)
-		//textView.text = "this is a testSDK积分换快递费testSDK积分换快递费款式都建行卡圣诞节疯狂京东数科水电费即可水电费卡大杀四方京东数科极客水电费即\neerer"
-		//textView.text = "this a test"
-		textView.placeholder = "121212this is a testSDK积分换快递费testSDK积分换快递费款式都建行卡圣诞节疯狂京东数科水电费即可水电费卡大杀四方京东数科极客水电费"
+		
+		textView.placeholder = "121212"
 		//textView.placeholder = "121212"
 
 		//内容缩进为0（去除左右边距
@@ -56,7 +55,6 @@ class TestMPTextViewViewController: UIViewController {
 		initUI()
 		
 		textView.text = "this is a testSDK积分换快递费testSDK积分换快递费款式都建行卡圣诞节疯狂京东数科水电费即可水电费卡大杀四方京东数科极客水电费即\neererthis is a testSDK积分换快递费testSDK积分换快递费款式都建行卡圣诞节疯狂京东数科水电费即可水电费卡大杀四方京东数科极客水电费即\neererthis is a testSDK积分换快递费testSDK积分换快递费款式都建行卡圣诞节疯狂京东数科水电费即可水电费卡大杀四方京东数科极客水电费即\neererthis is a testSDK积分换快递费testSDK积分换快递费款式都建行卡圣诞节疯狂京东数科水电费即可水电费卡大杀四方京东数科极客水电费即\neerer"
-		
 		
 	}
 	
