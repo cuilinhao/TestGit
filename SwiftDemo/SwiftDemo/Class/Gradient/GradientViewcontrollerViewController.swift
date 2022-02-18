@@ -56,17 +56,26 @@ class GradientViewcontrollerViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
         
-        //test()
+        //垂直渐变
+        //对角渐变
+        //testViewColor()
         
+        //描边渐变
         //testBorder()
+        
+        //透明度渐变
         //testAlpha()
         
-        test_1()
+        //垂直变化
+        //test_1()
         
-        
+        //水平变化
+        //testH()
     }
     
-    
+}
+
+extension GradientViewcontrollerViewController {
     func createGradientLayer() -> CAGradientLayer {
         //定义渐变的颜色（从黄色渐变到橙色）
         let topColor = UIColor.red// UIColor(red: 0xfe/255, green: 0xd3/255, blue: 0x2f/255, alpha: 1)
@@ -79,27 +88,25 @@ class GradientViewcontrollerViewController: UIViewController {
         let gradientLayer = CAGradientLayer()
         gradientLayer.colors = gradientColors
         //对角渐变
-        //gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.0)
-        //gradientLayer.endPoint = CGPoint(x: 1.0, y: 1.0)
+        gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.0)
+        gradientLayer.endPoint = CGPoint(x: 1.0, y: 1.0)
         
         //垂直渐变
-        gradientLayer.startPoint = CGPoint(x: 1.0, y: 0.0)
-        gradientLayer.endPoint = CGPoint(x: 1.0, y: 0.5)
+//        gradientLayer.startPoint = CGPoint(x: 1.0, y: 0.0)
+//        gradientLayer.endPoint = CGPoint(x: 1.0, y: 0.5)
         
         return gradientLayer
     }
-    
-    
 }
-
-
-//MARK: - 透明度
+//MARK: - 透明度渐变
 extension GradientViewcontrollerViewController {
     
     func testAlpha() {
         
-        let aView = UIView(frame: CGRect(x: 0, y: 100, width: 200, height: 160))
+        let aView = UIView(frame: CGRect(x: 100, y: 100, width: 200, height: 160))
         aView.backgroundColor = .lightGray
+        aView.layer.cornerRadius = 15.0
+        aView.layer.masksToBounds = true
         view.addSubview(aView)
         
         let gradientLayer = CAGradientLayer()
@@ -139,10 +146,13 @@ extension GradientViewcontrollerViewController {
         bView.backgroundColor = UIColor.lightGray
         view.addSubview(bView)
         
+        bView.layer.cornerRadius = 15.0
+        bView.layer.masksToBounds = true
+        
         bView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             bView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 200),
-            bView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            bView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 100),
             //bView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             bView.heightAnchor.constraint(equalTo: bView.widthAnchor, multiplier: 1.0),
             bView.widthAnchor.constraint(equalToConstant: 150)
@@ -177,7 +187,7 @@ extension GradientViewcontrollerViewController {
 //MARK: - 垂直变化_项目使用
 extension GradientViewcontrollerViewController {
     
-    func test() {
+    func testViewColor() {
         let vv = UIView()
         view.addSubview(vv)
         vv.translatesAutoresizingMaskIntoConstraints = false
