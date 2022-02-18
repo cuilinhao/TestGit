@@ -59,7 +59,10 @@ class GradientViewcontrollerViewController: UIViewController {
         //test()
         
         //testBorder()
-        testAlpha()
+        //testAlpha()
+        
+        test_1()
+        
         
     }
     
@@ -122,8 +125,6 @@ extension GradientViewcontrollerViewController {
         gradientLayer.mask = shaplayer
         
         aView.layer.addSublayer(gradientLayer)
-        
-        
     }
     
 }
@@ -140,14 +141,12 @@ extension GradientViewcontrollerViewController {
         
         bView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-        
             bView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 200),
             bView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             //bView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             bView.heightAnchor.constraint(equalTo: bView.widthAnchor, multiplier: 1.0),
             bView.widthAnchor.constraint(equalToConstant: 150)
         ])
-        
         view.layoutIfNeeded()
         
         //CAGradientLayer

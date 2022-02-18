@@ -40,3 +40,4 @@ open class MPCornerMaskedButton: MPStateButton {
         context.strokePath()
     }
 }
+*/
