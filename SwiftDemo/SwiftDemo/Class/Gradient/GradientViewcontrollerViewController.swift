@@ -58,19 +58,19 @@ class GradientViewcontrollerViewController: UIViewController {
         
         //垂直渐变
         //对角渐变
-        //testViewColor()
+        testViewColor()
         
         //描边渐变
-        //testBorder()
+        testBorder()
         
         //透明度渐变
-        //testAlpha()
+        testAlpha()
         
         //垂直变化
-        //test_1()
+        test_1()
         
         //水平变化
-        //testH()
+        testH()
     }
     
 }
@@ -103,7 +103,7 @@ extension GradientViewcontrollerViewController {
     
     func testAlpha() {
         
-        let aView = UIView(frame: CGRect(x: 100, y: 100, width: 200, height: 160))
+        let aView = UIView(frame: CGRect(x: 100, y: 120, width: 200, height: 90))
         aView.backgroundColor = .lightGray
         aView.layer.cornerRadius = 15.0
         aView.layer.masksToBounds = true
@@ -151,11 +151,11 @@ extension GradientViewcontrollerViewController {
         
         bView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            bView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 200),
+            bView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 220),
             bView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 100),
             //bView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             bView.heightAnchor.constraint(equalTo: bView.widthAnchor, multiplier: 1.0),
-            bView.widthAnchor.constraint(equalToConstant: 150)
+            bView.widthAnchor.constraint(equalToConstant: 90)
         ])
         view.layoutIfNeeded()
         
@@ -192,9 +192,10 @@ extension GradientViewcontrollerViewController {
         view.addSubview(vv)
         vv.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            vv.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 300),
+            vv.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 320),
             vv.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            vv.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            //vv.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            vv.widthAnchor.constraint(equalToConstant: 90),
             vv.heightAnchor.constraint(equalTo: vv.widthAnchor, multiplier: 1)
         ])
         vv.backgroundColor = .lightGray
@@ -216,7 +217,7 @@ extension GradientViewcontrollerViewController {
     func test1() {
         
         let vv = UIView()
-        vv.frame = CGRect(x: 0, y: 100, width: 200, height: 160)
+        vv.frame = CGRect(x: 100, y: 100, width: 420, height: 90)
         view.addSubview(vv)
         
         vv.backgroundColor = .lightGray
@@ -234,7 +235,7 @@ extension GradientViewcontrollerViewController {
     
     func testH() {
         let gradient = CAGradientLayer()
-        gradient.frame = CGRect(x: 0, y: 200, width: self.view.bounds.width, height: 100)
+        gradient.frame = CGRect(x: 0, y: 520, width: self.view.bounds.width, height: 90)
         gradient.startPoint = CGPoint(x: 0.0, y: 0.5)
         gradient.endPoint = CGPoint(x: 1.0, y: 0.5)
         gradient.colors = [UIColor.red.cgColor,
@@ -256,7 +257,7 @@ extension GradientViewcontrollerViewController {
     func test_1() {
         //垂直变化
         let gradient = CAGradientLayer()
-        gradient.frame = CGRect(x: 0, y: 200, width: self.view.bounds.width, height: self.view.bounds.width)
+        gradient.frame = CGRect(x: 0, y: 620, width: self.view.bounds.width, height: 190)
         gradient.startPoint = CGPoint(x: 1.0, y: 0.0)
         gradient.endPoint = CGPoint(x: 1.0, y: 0.5)
         //这个数组中的值必须在 0 和 1 之间，并以分数的形式指定渐变几何上的颜色停止。文档中指出，这个数组中的值必须是 "单向递增” 的
