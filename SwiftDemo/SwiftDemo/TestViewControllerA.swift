@@ -136,6 +136,9 @@ extension TestViewControllerA: UITableViewDataSource, UITableViewDelegate {
         case 7:
             let vc = CoreTextViewController()
             self.navigationController?.pushViewController(vc, animated: true)
+        case 8:
+            let vc = CountDownViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
         default:
             debugPrint(">>>nothing <<<")
         }
