@@ -49,6 +49,20 @@ import UIKit
  https://www.codenong.com/js94c0144feb35/
  */
 
+/*
+ 注释
+ startPoint与endPoint分别为渐变的起始方向与结束方向，它是以矩形的四个角为基础的，（0，0）为左上角、（1，0）为右上角、（0，1）为左下角、（1，1）为右下角，默认是值是（0.5，0）和（0.5，1）
+
+ 链接：https://www.jianshu.com/p/3ed9ac2ec4fa
+ 
+ (0,0) -------(1,0)
+ |           |
+ |           |
+ |           |
+ |           |
+ (0,1) -------(1,1)
+ 
+ */
 class GradientViewcontrollerViewController: UIViewController {
     
     //MARK: - Life Cycle

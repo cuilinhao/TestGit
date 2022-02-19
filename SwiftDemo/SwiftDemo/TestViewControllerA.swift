@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import TestFrame
+
 
 class TestViewControllerA: UIViewController {
     // 数据源data
@@ -47,6 +49,8 @@ class TestViewControllerA: UIViewController {
         ])
         loadData()
         handleData()
+//        test()
+        
         
     }
 }
