@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import TestFrame
 
 
 class TestViewControllerA: UIViewController {
