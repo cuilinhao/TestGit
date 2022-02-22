@@ -7,6 +7,32 @@
 
 import UIKit
 
+class TestPresntVC: UIViewController  {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+                let lab = UILabel()
+                view.addSubview(lab)
+                lab.autoLayout(in: view, top: 100, bottom: nil, leading: 0, trailing: 0)
+                lab.autoLayout(fixingHeight: 90, fixingWidth: nil)
+        
+                lab.backgroundColor = .systemGreen
+                lab.text = "dfhjsdhfj"
+        
+        view.backgroundColor = .randomColor()
+    }
+    
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        //当dismiss的时候 会调用deinit方法 销毁
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    deinit {
+        print("____deinit")
+    }
+}
 
 class TestViewControllerA: UIViewController {
     // 数据源data
@@ -144,6 +170,8 @@ extension TestViewControllerA: UITableViewDataSource, UITableViewDelegate {
             self.navigationController?.pushViewController(vc, animated: true)
         default:
             debugPrint(">>>nothing <<<")
+            let vc = TestPresntVC()
+            self.present(vc, animated: true)
         }
     }
 }
