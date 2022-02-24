@@ -20,5 +20,5 @@ pod 'Alamofire', '~> 5.0'
 
 pod 'HandyJSON'
 pod 'SwiftyJSON'
-
+#pod 'Regex'
 end

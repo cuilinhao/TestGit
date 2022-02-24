@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4236040B0990CD1EF55976FA /* Pods_SwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AB7C5B16F69B97F4EDBAE4F /* Pods_SwiftDemo.framework */; };
 		631902942779CC44009017D6 /* TestURLComponentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631902932779CC43009017D6 /* TestURLComponentViewController.swift */; };
+		6331675F27C7A690005B5D53 /* TestBlockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6331675E27C7A690005B5D53 /* TestBlockViewController.swift */; };
 		63396328276F2636006106B2 /* TestViewControllerA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63396327276F2636006106B2 /* TestViewControllerA.swift */; };
 		6339632A276F268F006106B2 /* TestViewControllerB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63396329276F268F006106B2 /* TestViewControllerB.swift */; };
 		6357F67627BF64D300374CF4 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6357F67527BF64D300374CF4 /* Timer.swift */; };
@@ -52,6 +53,7 @@
 /* Begin PBXFileReference section */
 		00765901070F5664066E97E6 /* Pods-SwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemo.release.xcconfig"; path = "Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
 		631902932779CC43009017D6 /* TestURLComponentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestURLComponentViewController.swift; sourceTree = "<group>"; };
+		6331675E27C7A690005B5D53 /* TestBlockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBlockViewController.swift; sourceTree = "<group>"; };
 		63396327276F2636006106B2 /* TestViewControllerA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewControllerA.swift; sourceTree = "<group>"; };
 		63396329276F268F006106B2 /* TestViewControllerB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewControllerB.swift; sourceTree = "<group>"; };
 		6357F67527BF64D300374CF4 /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 			children = (
 				631902932779CC43009017D6 /* TestURLComponentViewController.swift */,
 				704D54B2277A01A700D645AA /* TestCoadbleViewController.swift */,
+				6331675D27C7A671005B5D53 /* Block */,
 			);
 			path = URLComponents;
 			sourceTree = "<group>";
@@ -127,6 +130,15 @@
 			);
 			path = MPTextView;
 			sourceTree = "<group>";
+		};
+		6331675D27C7A671005B5D53 /* Block */ = {
+			isa = PBXGroup;
+			children = (
+				6331675E27C7A690005B5D53 /* TestBlockViewController.swift */,
+			);
+			name = Block;
+			path = SwiftDemo/Class/Block;
+			sourceTree = SOURCE_ROOT;
 		};
 		6357F67427BF64C600374CF4 /* TimerCount */ = {
 			isa = PBXGroup;
@@ -439,6 +451,7 @@
 				6371857A279D6D31005195FB /* TextViewViewController.swift in Sources */,
 				704D54AB27781C6F00D645AA /* AutoLayoutResizable.swift in Sources */,
 				704D54A02778139B00D645AA /* TestA.swift in Sources */,
+				6331675F27C7A690005B5D53 /* TestBlockViewController.swift in Sources */,
 				704D54B3277A01A700D645AA /* TestCoadbleViewController.swift in Sources */,
 				6357F67827BF654400374CF4 /* CountDownViewController.swift in Sources */,
 				704D54992778133800D645AA /* Common.swift in Sources */,
