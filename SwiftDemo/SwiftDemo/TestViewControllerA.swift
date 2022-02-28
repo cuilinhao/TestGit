@@ -7,33 +7,6 @@
 
 import UIKit
 
-class TestPresntVC: UIViewController  {
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-                let lab = UILabel()
-                view.addSubview(lab)
-                lab.autoLayout(in: view, top: 100, bottom: nil, leading: 0, trailing: 0)
-                lab.autoLayout(fixingHeight: 90, fixingWidth: nil)
-        
-                lab.backgroundColor = .systemGreen
-                lab.text = "dfhjsdhfj"
-        
-        view.backgroundColor = .randomColor()
-    }
-    
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        //当dismiss的时候 会调用deinit方法 销毁
-        self.dismiss(animated: true, completion: nil)
-    }
-    
-    deinit {
-        print("____deinit")
-    }
-}
-
 class TestViewControllerA: UIViewController {
     // 数据源data
     var dataSorceArray = [Any]() {
@@ -74,9 +47,6 @@ class TestViewControllerA: UIViewController {
         ])
         loadData()
         handleData()
-//        test()
-        
-        
     }
 }
 
@@ -89,6 +59,8 @@ extension TestViewControllerA {
             dataArray = dataDic.value(forKey: "Function") as! [String]
         }
     }
+    
+    
 }
 
 
@@ -96,7 +68,7 @@ extension TestViewControllerA {
 
     func handleData() {
         for (i, _) in self.dataArray.enumerated() {
-            if i <= 10 {
+            if i <= 15 {
                 self.dataSorceArray.append(self.dataArray[i])
             }
         }
@@ -168,6 +140,13 @@ extension TestViewControllerA: UITableViewDataSource, UITableViewDelegate {
         case 8:
             let vc = CountDownViewController()
             self.navigationController?.pushViewController(vc, animated: true)
+        case 9:
+            let vc = TestBlockViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+        case 11:
+            
+            let vc = TestDictionary()
+            self.navigationController?.pushViewController(vc, animated: true)
         default:
             debugPrint(">>>nothing <<<")
             let vc = TestPresntVC()
@@ -219,3 +198,31 @@ extension TestViewControllerA {
         print("___\(ff)")
     }
 }
+
+class TestPresntVC: UIViewController  {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+                let lab = UILabel()
+                view.addSubview(lab)
+                lab.autoLayout(in: view, top: 100, bottom: nil, leading: 0, trailing: 0)
+                lab.autoLayout(fixingHeight: 90, fixingWidth: nil)
+        
+                lab.backgroundColor = .systemGreen
+                lab.text = "dfhjsdhfj"
+        
+        view.backgroundColor = .randomColor()
+    }
+    
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        //当dismiss的时候 会调用deinit方法 销毁
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    deinit {
+        print("____deinit")
+    }
+}
+

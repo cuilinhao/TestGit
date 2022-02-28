@@ -66,6 +66,7 @@ class TestURLComponentViewController: UIViewController {
 
         self.view.backgroundColor = .white
         
+        print("___\(UINavigationController().navigationController)")
         test0()
         let lab = UILabel()
         lab.backgroundColor = .lightGray
