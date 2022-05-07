@@ -203,9 +203,6 @@ extension SegementSlideHeader: SegementSlideAction {
         currentIndex
     }
 
-    public func currentSelectedContent() throws -> SegementSlideContent {
-        throw SegementSlideError.tabPageContentError
-    }
     
     public func refresh() {
         guard let source = self.source else {

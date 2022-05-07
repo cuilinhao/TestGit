@@ -13,7 +13,6 @@ public protocol TestProtocol {
     func reloadData(index: Int, action: SegementSlideActionSource) throws
     func select(index: Int, animated: Bool, action: SegementSlideActionSource) throws
     func currentSelectedIndex() throws -> Int
-    func currentSelectedContent() throws -> SegementSlideContent
 }
 
 struct TestB {

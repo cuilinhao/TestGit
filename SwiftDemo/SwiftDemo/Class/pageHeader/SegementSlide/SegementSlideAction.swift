@@ -16,7 +16,6 @@ public protocol SegementSlideAction {
     func reloadData(index: Int, action: SegementSlideActionSource) throws
     func select(index: Int, animated: Bool, action: SegementSlideActionSource) throws
     func currentSelectedIndex() throws -> Int
-    func currentSelectedContent() throws -> SegementSlideContent
 }
 
 /// tab 详情页的必须功能
