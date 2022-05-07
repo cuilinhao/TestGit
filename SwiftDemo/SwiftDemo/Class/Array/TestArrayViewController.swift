@@ -8,6 +8,14 @@
 import UIKit
 import SwiftUI
 
+/// tab 管理页面的必须功能
+public protocol TestProtocol {
+    func reloadData(index: Int, action: SegementSlideActionSource) throws
+    func select(index: Int, animated: Bool, action: SegementSlideActionSource) throws
+    func currentSelectedIndex() throws -> Int
+    func currentSelectedContent() throws -> SegementSlideContent
+}
+
 struct TestB {
     var testBool: Bool?
     

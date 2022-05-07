@@ -55,8 +55,6 @@ public class SegementSlideHeader: UIView {
         //view.layoutMargins = .init(top: 10, left: .mp.margin, bottom: 15, right: .mp.margin)
         //SegementSlideCommonSet.Guide.Space.grid * 5
         view.layoutMargins = .init(top: 10, left: SegementSlideCommonSet.SegementSlideGuide.Space.grid * 5, bottom: 15, right:SegementSlideCommonSet.SegementSlideGuide.Space.grid * 5)
-        
-        
         return view
     }()
 
@@ -116,6 +114,7 @@ public class SegementSlideHeader: UIView {
         }
 
         try? select(index: index, animated: true, action: .select)
+        self.source?.segementSlide_header(self, didSelectAtIndex: index)
     }
     
     func updateBySource() {

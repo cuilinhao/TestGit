@@ -11,6 +11,9 @@ import UIKit
 /*
  自定义pageHeader Title
  */
+
+
+
 class TestPageHeaderCustomeTitleVC: UIViewController {
 
     private var tabItems: [SegementSlideHeader.Source] = []
@@ -95,6 +98,11 @@ extension TestPageHeaderCustomeTitleVC: SegementSlideHeaderSource, SegementSlide
         //self.onSelectIndex?(newIndex)
         print("_____tap__ me___")
     }
+    
+    func segementSlide_header(_ header: Any, didSelectAtIndex index: Int) {
+        print("_____点击了_pageHeader__")
+    }
+    
 }
 
 

@@ -29,6 +29,7 @@ public protocol SegementSlideHeaderSource: AnyObject {
     func segementSlide_header(_ header: Any, selectedFontAtIndex index: Int) -> UIFont
     func segementSlide_header(_ header: Any, normalColorAtIndex index: Int) -> UIColor
     func segementSlide_header(_ header: Any, selectedColorAtIndex index: Int) -> UIColor
+    func segementSlide_header(_ header: Any, didSelectAtIndex index: Int)
 }
 
 public extension SegementSlideHeaderSource {
@@ -52,6 +53,10 @@ public extension SegementSlideHeaderSource {
     func segementSlide_header(_ header: Any, selectedColorAtIndex index: Int) -> UIColor {
         //.nio.text.primary
         UIColor.systemBlue
+    }
+    //点击pageHeader 会触发
+    func segementSlide_header(_ header: Any, didSelectAtIndex index: Int) {
+        
     }
 }
 
