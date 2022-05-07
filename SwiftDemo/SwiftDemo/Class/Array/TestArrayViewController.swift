@@ -8,6 +8,10 @@
 import UIKit
 import SwiftUI
 
+struct TestB {
+    var testBool: Bool?
+    
+}
 class TestArrayViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -23,6 +27,22 @@ class TestArrayViewController: UIViewController {
         method2()
         method3()
         testForEach()
+        
+        let a1 = TestB.init(testBool: true)
+        let a2 = TestB.init(testBool: false)
+        let a3 = TestB.init(testBool: true)
+        let a4 = TestB.init(testBool: true)
+        
+        let aaa = [a1, a2,a3,a4]
+        
+        let ss = aaa.filter{ item in
+            
+            item.testBool == true
+
+        }
+
+        //a1, a3, a4
+        print("__ss__\(ss)")
     }
 
 }

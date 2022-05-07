@@ -47,6 +47,15 @@ class TestViewControllerA: UIViewController {
         ])
         loadData()
         handleData()
+        
+        let comds = ["aa", "bb"]
+        let ff = comds.filter{ cmd in  cmd == "aa"}
+        print("_____\(ff)__\(ff.first)")
+        
+        if comds.filter({ cmd in  cmd == "aa"}).first == "aa"{
+            print("____开始倒计时")
+        }
+        
     }
 }
 
@@ -147,6 +156,20 @@ extension TestViewControllerA: UITableViewDataSource, UITableViewDelegate {
             
             let vc = TestDictionary()
             self.navigationController?.pushViewController(vc, animated: true)
+        case 12:
+            let vc = EqutableViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+        case 13:
+            let vc = TestAlertViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+        case 14:
+            let vc = TestScrollViewControllerViewViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+        case 15:
+            let vc = TestPageHeaderCustomeTitleVC()
+            self.navigationController?.pushViewController(vc, animated: true)
+            
         default:
             debugPrint(">>>nothing <<<")
             let vc = TestPresntVC()

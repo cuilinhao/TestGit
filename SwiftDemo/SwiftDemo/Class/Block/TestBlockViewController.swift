@@ -11,6 +11,19 @@ import UIKit
 //闭包的使用
 //https://www.jianshu.com/p/7c599b96815b
 
+// $0. $1 的使用
+/*
+ //immo倒计时
+ vehicle.functionsController.immo.countDownTrigger = {  [weak self] in
+     //_ = $1
+     if let t = $0 {
+         self?.homepage?[\.display].countDown = .init(remaining: t, doorLocked:$1, formatter: { label, _, suggestion in
+             label?.attributedText = self?.setUpImmoText(timerText: suggestion)
+         })
+     }
+ }
+ 
+ */
 class TestAAB: UIViewController {
     
     //var aa: ((UIViewController?) -> Void)?

@@ -8,10 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		4236040B0990CD1EF55976FA /* Pods_SwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AB7C5B16F69B97F4EDBAE4F /* Pods_SwiftDemo.framework */; };
+		63005AED27FC07AB003F49D6 /* TestAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63005AEC27FC07AB003F49D6 /* TestAlertViewController.swift */; };
 		631902942779CC44009017D6 /* TestURLComponentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631902932779CC43009017D6 /* TestURLComponentViewController.swift */; };
+		6328D7FB28101F6900960CAE /* TestScrollViewControllerViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6328D7FA28101F6900960CAE /* TestScrollViewControllerViewViewController.swift */; };
 		6331675F27C7A690005B5D53 /* TestBlockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6331675E27C7A690005B5D53 /* TestBlockViewController.swift */; };
 		63396328276F2636006106B2 /* TestViewControllerA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63396327276F2636006106B2 /* TestViewControllerA.swift */; };
 		6339632A276F268F006106B2 /* TestViewControllerB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63396329276F268F006106B2 /* TestViewControllerB.swift */; };
+		63495E2428192DC900441980 /* TestSafe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63495E2328192DC900441980 /* TestSafe.swift */; };
 		6357F67627BF64D300374CF4 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6357F67527BF64D300374CF4 /* Timer.swift */; };
 		6357F67827BF654400374CF4 /* CountDownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6357F67727BF654400374CF4 /* CountDownViewController.swift */; };
 		6371592D277ED65B00CB297B /* TestCombineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6371592C277ED65B00CB297B /* TestCombineViewController.swift */; };
@@ -23,8 +26,15 @@
 		63718578279D5092005195FB /* CoreTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63718577279D5092005195FB /* CoreTextViewController.swift */; };
 		6371857A279D6D31005195FB /* TextViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63718579279D6D31005195FB /* TextViewViewController.swift */; };
 		6371857C279E6F87005195FB /* MPCornerMaskedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6371857B279E6F87005195FB /* MPCornerMaskedButton.swift */; };
+		639B41F627D726A700E4E281 /* EqutableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639B41F527D726A700E4E281 /* EqutableViewController.swift */; };
 		639DDD3227CB954600D5E802 /* SwiftUIList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 639DDD3127CB954600D5E802 /* SwiftUIList.plist */; };
 		639DDD3527CC6A7E00D5E802 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639DDD3427CC6A7E00D5E802 /* Dictionary.swift */; };
+		63B92B96282621EC0079F604 /* TestPageHeaderCustomeTitleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B92B95282621EC0079F604 /* TestPageHeaderCustomeTitleVC.swift */; };
+		63B92B99282626480079F604 /* SegementSlideHeaderSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B92B98282626480079F604 /* SegementSlideHeaderSource.swift */; };
+		63B92B9B282626510079F604 /* SegementSlideError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B92B9A282626510079F604 /* SegementSlideError.swift */; };
+		63B92B9D2826265A0079F604 /* SegementSlideAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B92B9C2826265A0079F604 /* SegementSlideAction.swift */; };
+		63B92B9F2826265F0079F604 /* SegementSlideHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B92B9E2826265F0079F604 /* SegementSlideHeader.swift */; };
+		63B92BA328263FFE0079F604 /* SegementSlideCommonSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B92BA228263FFE0079F604 /* SegementSlideCommonSet.swift */; };
 		63C40033276B395A009C680B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C40032276B395A009C680B /* AppDelegate.swift */; };
 		63C40035276B395A009C680B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C40034276B395A009C680B /* SceneDelegate.swift */; };
 		63C4003A276B395A009C680B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63C40038276B395A009C680B /* Main.storyboard */; };
@@ -54,10 +64,13 @@
 
 /* Begin PBXFileReference section */
 		00765901070F5664066E97E6 /* Pods-SwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemo.release.xcconfig"; path = "Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
+		63005AEC27FC07AB003F49D6 /* TestAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAlertViewController.swift; sourceTree = "<group>"; };
 		631902932779CC43009017D6 /* TestURLComponentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestURLComponentViewController.swift; sourceTree = "<group>"; };
+		6328D7FA28101F6900960CAE /* TestScrollViewControllerViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestScrollViewControllerViewViewController.swift; sourceTree = "<group>"; };
 		6331675E27C7A690005B5D53 /* TestBlockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBlockViewController.swift; sourceTree = "<group>"; };
 		63396327276F2636006106B2 /* TestViewControllerA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewControllerA.swift; sourceTree = "<group>"; };
 		63396329276F268F006106B2 /* TestViewControllerB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewControllerB.swift; sourceTree = "<group>"; };
+		63495E2328192DC900441980 /* TestSafe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSafe.swift; sourceTree = "<group>"; };
 		6357F67527BF64D300374CF4 /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
 		6357F67727BF654400374CF4 /* CountDownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownViewController.swift; sourceTree = "<group>"; };
 		6371592C277ED65B00CB297B /* TestCombineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCombineViewController.swift; sourceTree = "<group>"; };
@@ -69,8 +82,15 @@
 		63718577279D5092005195FB /* CoreTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreTextViewController.swift; sourceTree = "<group>"; };
 		63718579279D6D31005195FB /* TextViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewViewController.swift; sourceTree = "<group>"; };
 		6371857B279E6F87005195FB /* MPCornerMaskedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MPCornerMaskedButton.swift; sourceTree = "<group>"; };
+		639B41F527D726A700E4E281 /* EqutableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EqutableViewController.swift; sourceTree = "<group>"; };
 		639DDD3127CB954600D5E802 /* SwiftUIList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SwiftUIList.plist; sourceTree = "<group>"; };
 		639DDD3427CC6A7E00D5E802 /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
+		63B92B95282621EC0079F604 /* TestPageHeaderCustomeTitleVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestPageHeaderCustomeTitleVC.swift; sourceTree = "<group>"; };
+		63B92B98282626480079F604 /* SegementSlideHeaderSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegementSlideHeaderSource.swift; sourceTree = "<group>"; };
+		63B92B9A282626510079F604 /* SegementSlideError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegementSlideError.swift; sourceTree = "<group>"; };
+		63B92B9C2826265A0079F604 /* SegementSlideAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegementSlideAction.swift; sourceTree = "<group>"; };
+		63B92B9E2826265F0079F604 /* SegementSlideHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegementSlideHeader.swift; sourceTree = "<group>"; };
+		63B92BA228263FFE0079F604 /* SegementSlideCommonSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegementSlideCommonSet.swift; sourceTree = "<group>"; };
 		63C4002F276B395A009C680B /* SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63C40032276B395A009C680B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63C40034276B395A009C680B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,12 +134,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63005AE927FC078D003F49D6 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				63005AEC27FC07AB003F49D6 /* TestAlertViewController.swift */,
+				6328D7FA28101F6900960CAE /* TestScrollViewControllerViewViewController.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
 		631902922779CC1A009017D6 /* URLComponents */ = {
 			isa = PBXGroup;
 			children = (
 				631902932779CC43009017D6 /* TestURLComponentViewController.swift */,
 				704D54B2277A01A700D645AA /* TestCoadbleViewController.swift */,
-				6331675D27C7A671005B5D53 /* Block */,
 			);
 			path = URLComponents;
 			sourceTree = "<group>";
@@ -138,10 +166,21 @@
 		6331675D27C7A671005B5D53 /* Block */ = {
 			isa = PBXGroup;
 			children = (
+				639B41F527D726A700E4E281 /* EqutableViewController.swift */,
 				6331675E27C7A690005B5D53 /* TestBlockViewController.swift */,
 			);
 			name = Block;
 			path = SwiftDemo/Class/Block;
+			sourceTree = SOURCE_ROOT;
+		};
+		63495E0D2819255C00441980 /* pageHeader */ = {
+			isa = PBXGroup;
+			children = (
+				63B92B97282625D20079F604 /* SegementSlide */,
+				63B92B95282621EC0079F604 /* TestPageHeaderCustomeTitleVC.swift */,
+			);
+			name = pageHeader;
+			path = SwiftDemo/Class/pageHeader;
 			sourceTree = SOURCE_ROOT;
 		};
 		6357F67427BF64C600374CF4 /* TimerCount */ = {
@@ -205,6 +244,19 @@
 				639DDD3427CC6A7E00D5E802 /* Dictionary.swift */,
 			);
 			path = Dictionary;
+			sourceTree = "<group>";
+		};
+		63B92B97282625D20079F604 /* SegementSlide */ = {
+			isa = PBXGroup;
+			children = (
+				63B92B98282626480079F604 /* SegementSlideHeaderSource.swift */,
+				63B92B9A282626510079F604 /* SegementSlideError.swift */,
+				63B92B9C2826265A0079F604 /* SegementSlideAction.swift */,
+				63B92B9E2826265F0079F604 /* SegementSlideHeader.swift */,
+				63B92BA228263FFE0079F604 /* SegementSlideCommonSet.swift */,
+				63495E2328192DC900441980 /* TestSafe.swift */,
+			);
+			path = SegementSlide;
 			sourceTree = "<group>";
 		};
 		63C40026276B395A009C680B = {
@@ -288,6 +340,9 @@
 				6371592A277ED64C00CB297B /* Protocol */,
 				631902952779CCD5009017D6 /* MPTextView */,
 				631902922779CC1A009017D6 /* URLComponents */,
+				6331675D27C7A671005B5D53 /* Block */,
+				63005AE927FC078D003F49D6 /* Alert */,
+				63495E0D2819255C00441980 /* pageHeader */,
 			);
 			name = Class;
 			path = SwiftDemo/Class;
@@ -444,17 +499,23 @@
 				704D54A427781C5D00D645AA /* MPTextView.swift in Sources */,
 				704D54A227781B6D00D645AA /* TestMPTextViewViewController.swift in Sources */,
 				704D54AD27781C6F00D645AA /* AutoLayoutElement.swift in Sources */,
+				63005AED27FC07AB003F49D6 /* TestAlertViewController.swift in Sources */,
 				704D54AC27781C6F00D645AA /* AutoLayout.swift in Sources */,
+				63B92B9D2826265A0079F604 /* SegementSlideAction.swift in Sources */,
 				7031963F278A98E6002D43D2 /* TestNSObjectProtocol.swift in Sources */,
+				63B92B9F2826265F0079F604 /* SegementSlideHeader.swift in Sources */,
 				70319638278332B6002D43D2 /* CombineSearchAPI.swift in Sources */,
 				6371854A279C3F13005195FB /* GradientViewcontrollerViewController.swift in Sources */,
 				63396328276F2636006106B2 /* TestViewControllerA.swift in Sources */,
 				63715934277F09A100CB297B /* TestCombine.swift in Sources */,
+				6328D7FB28101F6900960CAE /* TestScrollViewControllerViewViewController.swift in Sources */,
 				63715932277EDAFE00CB297B /* TestArrayViewController.swift in Sources */,
 				639DDD3527CC6A7E00D5E802 /* Dictionary.swift in Sources */,
 				6371592D277ED65B00CB297B /* TestCombineViewController.swift in Sources */,
+				63B92B9B282626510079F604 /* SegementSlideError.swift in Sources */,
 				704D54942778133800D645AA /* Date.swift in Sources */,
 				704D54972778133800D645AA /* UIColorExtension.swift in Sources */,
+				639B41F627D726A700E4E281 /* EqutableViewController.swift in Sources */,
 				704D54982778133800D645AA /* UIColor-Extension.swift in Sources */,
 				704D54AE27781C6F00D645AA /* NSLayoutConstraint.swift in Sources */,
 				7031963A278332C3002D43D2 /* CombineAPI.swift in Sources */,
@@ -466,15 +527,19 @@
 				6371592F277ED66500CB297B /* TestProtocolViewController.swift in Sources */,
 				6371857A279D6D31005195FB /* TextViewViewController.swift in Sources */,
 				704D54AB27781C6F00D645AA /* AutoLayoutResizable.swift in Sources */,
+				63495E2428192DC900441980 /* TestSafe.swift in Sources */,
 				704D54A02778139B00D645AA /* TestA.swift in Sources */,
 				6331675F27C7A690005B5D53 /* TestBlockViewController.swift in Sources */,
 				704D54B3277A01A700D645AA /* TestCoadbleViewController.swift in Sources */,
 				6357F67827BF654400374CF4 /* CountDownViewController.swift in Sources */,
 				704D54992778133800D645AA /* Common.swift in Sources */,
 				704D54AF27781C6F00D645AA /* AutoLayoutCompatible.swift in Sources */,
+				63B92B96282621EC0079F604 /* TestPageHeaderCustomeTitleVC.swift in Sources */,
+				63B92BA328263FFE0079F604 /* SegementSlideCommonSet.swift in Sources */,
 				704D54B12778278B00D645AA /* TestTextView.swift in Sources */,
 				63C40035276B395A009C680B /* SceneDelegate.swift in Sources */,
 				63718578279D5092005195FB /* CoreTextViewController.swift in Sources */,
+				63B92B99282626480079F604 /* SegementSlideHeaderSource.swift in Sources */,
 				63715936277F167200CB297B /* TestcombileLab.swift in Sources */,
 				6357F67627BF64D300374CF4 /* Timer.swift in Sources */,
 			);

@@ -24,6 +24,8 @@ class TestCombine: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let ss = ["aaa", "bbb"]
+        
         let lab = UILabel()
         lab.text = "haha"
         lab.backgroundColor = .systemRed
