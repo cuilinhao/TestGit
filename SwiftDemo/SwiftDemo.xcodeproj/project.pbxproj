@@ -26,6 +26,7 @@
 		63718578279D5092005195FB /* CoreTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63718577279D5092005195FB /* CoreTextViewController.swift */; };
 		6371857A279D6D31005195FB /* TextViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63718579279D6D31005195FB /* TextViewViewController.swift */; };
 		6371857C279E6F87005195FB /* MPCornerMaskedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6371857B279E6F87005195FB /* MPCornerMaskedButton.swift */; };
+		6389450928598E9700ACC685 /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = 6389450828598E9700ACC685 /* test.json */; };
 		639B41F627D726A700E4E281 /* EqutableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639B41F527D726A700E4E281 /* EqutableViewController.swift */; };
 		639DDD3227CB954600D5E802 /* SwiftUIList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 639DDD3127CB954600D5E802 /* SwiftUIList.plist */; };
 		639DDD3527CC6A7E00D5E802 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639DDD3427CC6A7E00D5E802 /* Dictionary.swift */; };
@@ -81,6 +82,7 @@
 		63718577279D5092005195FB /* CoreTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreTextViewController.swift; sourceTree = "<group>"; };
 		63718579279D6D31005195FB /* TextViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewViewController.swift; sourceTree = "<group>"; };
 		6371857B279E6F87005195FB /* MPCornerMaskedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MPCornerMaskedButton.swift; sourceTree = "<group>"; };
+		6389450828598E9700ACC685 /* test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
 		639B41F527D726A700E4E281 /* EqutableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EqutableViewController.swift; sourceTree = "<group>"; };
 		639DDD3127CB954600D5E802 /* SwiftUIList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SwiftUIList.plist; sourceTree = "<group>"; };
 		639DDD3427CC6A7E00D5E802 /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
@@ -320,6 +322,7 @@
 			isa = PBXGroup;
 			children = (
 				63396329276F268F006106B2 /* TestViewControllerB.swift */,
+				6389450828598E9700ACC685 /* test.json */,
 			);
 			name = Other;
 			path = SwiftDemo/Other;
@@ -438,6 +441,7 @@
 				639DDD3227CB954600D5E802 /* SwiftUIList.plist in Resources */,
 				63C4003F276B395B009C680B /* LaunchScreen.storyboard in Resources */,
 				63C4003C276B395B009C680B /* Assets.xcassets in Resources */,
+				6389450928598E9700ACC685 /* test.json in Resources */,
 				70D4F9342774C440002ACB01 /* Property List.plist in Resources */,
 				63C4003A276B395A009C680B /* Main.storyboard in Resources */,
 			);

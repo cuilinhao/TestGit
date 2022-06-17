@@ -1,0 +1,16 @@
+{
+    "vehicle_vehicle_activation_about": {
+        "zh": "激活后可使用车辆和远程控制",
+        "custom_varible_name": "activation_about",
+        "default": "After activation, the vehicle & remote control available",
+        "en": "After activation, the vehicle & remote control available",
+        "nb": "Etter aktivering er kjøretøyet og fjernstyring tilgjengelig."
+    },
+    "vehicle_vehicle_activation_activate_your_xxx": {
+        "zh": "激活你的\\n%@",
+        "custom_varible_name": "activation_activateYour",
+        "default": "Activate your\\n%@",
+        "en": "Activate your\\n%@",
+        "nb": "Aktiver din\\n%@"
+    }
+}
